@@ -1,8 +1,7 @@
 "use strict";
 
-const image = document.createElement("img");
-const imageNum = parseInt(Math.random() * 10) + 1;
-image.style.height = "100vh";
+const image = document.querySelector("img");
+const imageNum = Math.floor(Math.random() * 10) + 1;
+console.log(imageNum)
 
 image.src = `/img/${imageNum}.jpg`;
-document.body.append(image);
